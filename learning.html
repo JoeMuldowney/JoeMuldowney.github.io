@@ -10,8 +10,10 @@
 <style>
 .ascii-art {
   font-family: monospace;
-  font-size: clamp(0.6rem, 2vw, 1.2rem);
-  line-height: 1.1;
+  font-size: clamp(6px, 1.5vw, 16px);
+  line-height: 1;
+  white-space: pre;
+  overflow-x: auto;
 }
 </style> 
 </head>
@@ -40,7 +42,7 @@
 
 
 
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
 <pre class="ascii-art">
   _                          _              
  | |    ___  __ _ _ __ _ __ (_)_ __   __ _ 
@@ -49,30 +51,125 @@
  |_____\___|\__,_|_|  |_| |_|_|_| |_|\__, |
                                      |___/                    
 </pre>
-<p>I am continuously expanding my knowledge as learning is a core part of my growth as a developer and engineer.</p>
+<p class="fs-5">I am continuously expanding my knowledge as learning is a core part of my growth as a developer and engineer.</p>
 
-<div class="card-group">
-  <div class="card">
-    <img src="images/lp1-1.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Iots Dashboard</h5>
-      <p class="card-text">Get real-time sensor data from a custom built dashboard.</p>
+<div class="card mb-3 mt-5" >
+  <div id="carouselProject4" class="carousel slide card-img-top" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/lp1-1.png" class="d-block w-100" alt="...">
     </div>
-    <div class="card-footer">
-      
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
   </div>
-  <div class="card">
-    <img src="images/opencv-logo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">OpenCV</h5>
-      <p class="card-text">OpenCV is a library of programming functions mainly for real-time computer vision.</p>
-    </div>
-    <div class="card-footer">
-      https://opencv.org/
-    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProject4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+  <div class="card-body">
+    <h5 class="card-title">IoT Dashboard</h5>
+    <p class="card-text">Designed to stream real-time sensor data from a custom-built embedded device to a web dashboard.</p>
+    <p class="card-text"><small class="text-muted">C, JavaScript, ESP-IDF, React, Express, Docker, OKD</small></p>
+  </div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    Streaming sensor data from ESP32 devices using ESP-IDF and MQTT for real-time telemetry.
+  </li>
+  <li class="list-group-item">
+    Building a web dashboard with React and WebSockets for live data visualization.
+  </li>
+  <li class="list-group-item">
+    Exploring containerized deployment and orchestration on OKD for scalable service delivery.
+  </li>
+  <li class="list-group-item">
+    Developing embedded firmware in C to interface with sensors and publish telemetry.
+  </li>
+  <li class="list-group-item">
+    Future enhancements will include analytics and anomaly detection for sensor data streams.
+  </li>
+</ul>
+  <div class="card-body">
+    <a  class="card-link">GitHub repo-mcu</a>
+    <a href="https://github.com/JoeMuldowney/Iots-Dashboard" target="_blank" rel="noopener noreferrer" class="card-link">GitHub repo-dashboard</a>
+    <a href="https://dashboard-iots-dashboard.apps.gaspar.ontampa.dev/" target="_blank" rel="noopener noreferrer" class="card-link">View application</a>
   </div>
 </div>
+  
+<div class="card mb-3 mt-5" >
+<div id="carouselProject5" class="carousel slide card-img-top" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProject5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+  <div class="card-body">
+    <h5 class="card-title">OpenCV</h5>
+    <p class="card-text">Exploring real-time computer vision techniques using OpenCV in C++, focusing on image processing and object detection fundamentals.</p>
+    <p class="card-text"><small class="text-muted">C++</small></p>
+  </div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    Implementing image processing pipelines for feature detection and object analysis.
+  </li>
+  <li class="list-group-item">
+    Experimenting with real-time video capture and frame manipulation.
+  </li>
+  <li class="list-group-item">
+    Learning foundational computer vision techniques for object recognition and spatial analysis.
+  </li>
+  <li class="list-group-item">
+    Building small prototypes to understand CV workflows and performance considerations.
+  </li>
+  <li class="list-group-item">
+    Future work includes object tracking and dataset-driven vision models.
+  </li>
+</ul>
+  <div class="card-body">
+    
+    <a class="card-link">GitHub repo</a>
+    <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer" class="card-link">Website</a>
+  </div>
+</div>
+  </div>
+
+
+
 
 
 

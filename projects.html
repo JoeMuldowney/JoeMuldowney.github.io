@@ -14,8 +14,10 @@
 }
 .ascii-art {
   font-family: monospace;
-  font-size: clamp(0.6rem, 2vw, 1.2rem);
-  line-height: 1.1;
+  font-size: clamp(6px, 1.5vw, 16px);
+  line-height: 1;
+  white-space: pre;
+  overflow-x: auto;
 }
 </style>
 
@@ -44,7 +46,7 @@
 </nav>
 
 
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
 <pre class="ascii-art">
   ____                         ____            _           _       
  |  _ \  ___ _ __ ___   ___   |  _ \ _ __ ___ (_) ___  ___| |_ ___ 
@@ -86,20 +88,19 @@
   
   <div class="card-body">
     <h5 class="card-title">Data Property System</h5>
-    <p class="card-text">Designed to streamline property data management</p>
+    <p class="card-text">A scalable property data management platform designed for real estate analytics and valuation workflows.</p>
     <p class="card-text"><small class="text-muted">Java 17, Spring Boot, Maven, EC2, RDS, Postgres, React, Docker, Jenkins</small></p>
   </div>
     <ul class="list-group list-group-flush">
     <li class="list-group-item">Built a layered Java Spring Boot REST API with JPA, supporting scalable data management and business logic separation.</li>
-    <li class="list-group-item">The React-based frontend provides a responsive and user-friendly interface for data interaction.</li>
-    <li class="list-group-item">React streamlines data and creates a user friendly interface.</li>
+    <li class="list-group-item">The React-based frontend provides a responsive and user-friendly interface for data interaction.</li>    
     <li class="list-group-item">Deployment is containerized and automated using Docker and Jenkins on Amazon Web Services EC2 for continuous delivery.</li>
     <li class="list-group-item">Future enhancements may include additional property attributes and machine learning-based valuation improvements.</li>
   </ul>
   <div class="card-body">
-    <a href="https://github.com/JoeMuldowney/Property-React-UI" target="_blank" class="card-link">GitHub repo-front</a>
-    <a href="https://github.com/JoeMuldowney/Property-Spring-Boot-API" target="_blank" class="card-link">GitHub repo-back</a>
-    <a href="https://csportfoliojm.com/frontend/" target="_blank" class="card-link">Try application</a>
+    <a href="https://github.com/JoeMuldowney/Property-React-UI" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary me-2">GitHub repo-front</a>
+    <a href="https://github.com/JoeMuldowney/Property-Spring-Boot-API" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info me-2">GitHub repo-back</a>
+    <a href="https://csportfoliojm.com/frontend/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success me-2">Try application</a>
   </div>
 </div>
 <div class="card mb-3 mt-5" >
@@ -140,17 +141,19 @@
     <li class="list-group-item">Increased summarization accuracy by over 12% compared to baseline.</li>
   </ul>
   <div class="card-body">
-    <a href="https://github.com/JoeMuldowney/AI_Paraphraser" target="_blank"class="card-link">GitHub repo</a>
-    <a href="https://bartaidemo.com/" target="_blank" class="card-link">Try application</a>    
+    <a href="https://github.com/JoeMuldowney/AI_Paraphraser" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary me-2">GitHub repo</a>
+    <a href="https://bartaidemo.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success me-2">Try application</a>    
   </div>
 </div>
 <div class="card mb-3 mt-5" >
     
 <div id="carouselProject3" class="carousel slide card-img-top" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -161,6 +164,11 @@
     </div>
         <div class="carousel-item">
       <img src="images/p2-3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/p2-4.png" class="d-block w-100" alt="...">
+    </div>        
+ 
     </div>
 
   </div>
@@ -176,20 +184,20 @@
   
   <div class="card-body">
     <h5 class="card-title">Book Smith</h5>
-    <p class="card-text">Designed as a platform for buying and renting books.</p>
+    <p class="card-text">A scalable microservice-based platform for buying and renting books.</p>
     <p class="card-text"><small class="text-muted">Python, Go, Django, Postgres, Jenkins, Docker, React, EC2, RDS</small></p>
   </div>
     <ul class="list-group list-group-flush">
-    <li class="list-group-item">Utilizes a RESTful Java (Spring Boot) API with JPA</li>
-    <li class="list-group-item">Architecture consists of a presentation, application, business, and data layer</li>
-    <li class="list-group-item">React streamlines data and creates a user friendly interface.</li>
+    <li class="list-group-item">Developed a microservice-based eCommerce platform for buying and renting books.</li>
+    <li class="list-group-item">Built authentication services in Django and implemented shopping cart/buying logic in Go.</li>    
+    <li class="list-group-item">Deployed services on AWS EC2 behind a load balancer to support scalability.</li>
     <li class="list-group-item">Future enhancements may include integrated social features for user interaction, creating a book-focused social media experience.</li>
   </ul>
   <div class="card-body">
-    <a href="https://github.com/JoeMuldowney/Book-Smith-React-JSX-UI" target="_blank" class="card-link">GitHub repo-front</a>
-    <a href="https://github.com/JoeMuldowney/Virtual-Library-Auth-Profile-API" target="_blank" class="card-link">GitHub repo-python</a>
-    <a href="https://github.com/JoeMuldowney/Virtual-Library-Go-Checkout-API" target="_blank" class="card-link">GitHub repo-go</a>
-    <a href="https://csjoeportfolio.com/" target="_blank" class="card-link">Try application</a>
+    <a href="https://github.com/JoeMuldowney/Book-Smith-React-JSX-UI" target="_blank" rel="noopener noreferrer"" class="btn btn-sm btn-outline-primary me-2">GitHub repo-front</a>
+    <a href="https://github.com/JoeMuldowney/Virtual-Library-Auth-Profile-API" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info me-2">GitHub repo-python</a>
+    <a href="https://github.com/JoeMuldowney/Virtual-Library-Go-Checkout-API" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary me-2">GitHub repo-go</a>
+    <a href="https://csjoeportfolio.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success me-2">Try application</a>
   </div>
 </div>
 </div>
