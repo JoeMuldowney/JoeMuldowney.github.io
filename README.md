@@ -39,6 +39,9 @@ Community involvement, collaboration, and contributions.
 ### Contact
 Links to LinkedIn, GitHub, and email for professional opportunities.
 
+### Freelance
+Modern, mobile-friendly websites for small businesses looking to improve their online presence and attract more customers.
+
 ---
 
 ## Technologies Used
