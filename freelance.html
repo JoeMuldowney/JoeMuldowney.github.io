@@ -8,69 +8,59 @@
   <meta name="description" content="A portfolilo for Joe Muldowney to show a range of projects from a static website to scalable cloud solutions">
   <meta name="keywords" content="software devloper, coding, web, cloud, technology, developer, software">
   <meta name="author" content="Joe Muldowney">
+  <link href="style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> <!-- Added for including other html pages-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<style>
 
-.skill-box {
-  transition: all 0.2s ease-in-out;
-}
-
-.skill-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
     <div class="container">
 
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
 <ul class="navbar-nav me-auto">
   <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="index.html">
+<a class="nav-link d-flex align-items-center enlarge" href="index.html">
   <img src="images/icons/home.svg" alt="Home icon" width="16" height="16" class="me-2">
   Home
 </a>
 </li>
   <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="contact.html">
+<a class="nav-link d-flex align-items-center enlarge" href="contact.html">
   <img src="images/icons/device-mobile-24.svg" alt="Home icon" width="16" height="16" class="me-2">
   Contact
 </a>
 </li>
   <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="projects.html">
+<a class="nav-link d-flex align-items-center enlarge" href="projects.html">
   <img src="images/icons/file-directory-24.svg" alt="Home icon" width="16" height="16" class="me-2">
   Projects
 </a>
 </li>
   <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="skill.html">
+<a class="nav-link d-flex align-items-center enlarge" href="skill.html">
   <img src="images/icons/gear-24.svg" alt="Home icon" width="16" height="16" class="me-2">
   Skills
 </a>
 </li>
     <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="learning.html">
+<a class="nav-link d-flex align-items-center enlarge" href="learning.html">
   <img src="images/icons/light-bulb-24.svg" alt="Home icon" width="16" height="16" class="me-2">
   Learning
 </a>
 </li>
   <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="community.html">
+<a class="nav-link d-flex align-items-center enlarge" href="community.html">
   <img src="images/icons/accessibility-24.svg" alt="Home icon" width="16" height="16" class="me-2">
   Community
 </a>
 </li>
   <li class="nav-item">
-<a class="nav-link d-flex align-items-center" href="freelance.html">
-  <img src="images/icons/ruby-24.svg" alt="Home icon" width="16" height="16" class="me-2">
+<a class="nav-link d-flex align-items-center enlarge" href="freelance.html">
+  <img src="images/icons/freelance-24.svg" alt="Home icon" width="16" height="16" class="me-2">
   Freelance
 </a>
 </li>  
@@ -91,8 +81,8 @@
 <!-- Services -->
 <section id="services" class="py-5">
   <div class="container text-center">
-    <h2 class="text-primary mb-4">What I Offer</h2>
-    <p class="fs-5 mb-4">I build websites designed to attract customers and grow your business.</p>
+    <h3 class="text-primary mb-4">What I Can Help With</h3>
+    <p class="lead mb-4">I build websites designed to attract customers and grow your business.</p>
     <ul class="list-group list-group-flush mx-auto" style="max-width: 600px;">
   <li class="list-group-item">Turn visitors into paying customers with conversion-focused design</li>
   <li class="list-group-item">Modern, mobile-friendly websites that look great on any device</li>
@@ -111,47 +101,98 @@
 <section id="projects" class="py-5 bg-light">
   <div class="container text-center">
     <h2 class="text-primary mb-4">Demos</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/d1-01.webp" class="d-block w-100" alt="...">
+      <div class="row g-4 justify-content-center gap-5 ">
+        <div class="col-md-4">
+          <div class="card">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/d1-01.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/d1-02.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/d1-03.webp" class="d-block w-100" alt="...">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/d1-02.webp" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/d1-03.webp" class="d-block w-100" alt="...">
-              </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="card-body">
+              <h5 class="card-title">Sunny Side Café</h5>
+              <p class="card-text">A modern, conversion-focused website designed to help local cafés attract more customers and increase walk-in traffic.</p>
+              <a href="https://joemuldowneydemos-sunnysidecafe.com" target="_blank" rel="noopener noreferrer" class="btn btn-info">View Website</a>
+            </div>
+                <ul class="text-start small mt-3">
+                  <li>Helps customers quickly find essential information like menu, hours, and location without friction</li>
+                  <li>Designed to convert website visitors into real-world customers through clear calls-to-action</li>
+                  <li>Fully mobile-optimized for users searching on-the-go from phones and local search results</li>
+                  <li>Clean, professional design that builds trust and reinforces brand credibility</li>
+                  <li>Fast-loading site to keep visitors from leaving</li>
+                </ul>
+                <p class="mt-2 small text-muted">
+                  Perfect for cafés, restaurants, barbershops, and other local businesses that rely on foot traffic, Google visibility, and local search discovery.
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Sunny Side Café</h5>
-            <p class="card-text">A simple website designed to help a café attract more local customers and increase foot traffic.</p>
-            <a href="https://joemuldowneydemos-sunnysidecafe.com" target="_blank" rel="noopener noreferrer" class="btn btn-info">View Website</a>
-          </div>
-          <ul class="text-start small mt-3">
-            <li>Helps customers quickly find your menu, hours, and location</li>
-            <li>Designed to turn visitors into walk-in customers</li>
-            <li>Mobile-friendly for people searching nearby on their phones</li>
-            <li>Simple layout that builds trust and professionalism</li>
-            <li>Fast-loading site to keep visitors from leaving</li>
-          </ul>
-<p class="mt-2 small text-muted">
-  Perfect for restaurants, cafés, barbershops, and other local businesses.
-</p>
+          
+
         </div>
+        <!--Project 2-->
+<div class="col-md-4">
+          <div class="card">
+            <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/d2-1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/d2-2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/d2-3.webp" class="d-block w-100" alt="...">
+                </div>
+              </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">TimeWise</h5>
+              <p class="card-text">A streamlined appointment management web application designed to simplify scheduling and reduce administrative workload for service-based businesses.</p>
+              <a href="https://joemuldowneydemos-timewise.com" target="_blank" rel="noopener noreferrer" class="btn btn-info">View Website</a>
+            </div>
+                <ul class="text-start small mt-3">
+                  <li>Allows clients to book appointments easily without calls, messages, or manual coordination</li>
+                  <li>Organizes all bookings in a centralized system to reduce missed or double-booked appointments</li>
+                  <li>Built for busy professionals who need a simple, reliable scheduling workflow</li>
+                  <li>Mobile-friendly interface so clients can book, view, or manage appointments from any device</li>
+                  <li>Clean and professional UI that enhances credibility and improves client trust</li>
+                </ul>
+                <p class="mt-2 small text-muted">
+                  Ideal for barbers, fitness trainers, freelancers, and independent service providers who want to automate scheduling and stay organized.
+                </p>
+                
+          </div>         
+
+        </div>
+
       </div>
+
 
 </section>
 
@@ -167,6 +208,7 @@
 
 <script>
   $("#footer").load("footer.html");  
+
 </script>
 
   

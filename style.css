@@ -1,0 +1,26 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.skill-box {
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.enlarge{
+
+}
+
+.enlarge:hover{
+    transform: scale(1.1);
+}
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
+  position: static !important;
+}
